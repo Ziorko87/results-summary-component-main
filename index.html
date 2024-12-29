@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="font-Hanken">
+    <main class="flex items-center justify-center h-screen">
+      <!--app wrapper-->
+      <div
+        class="cardShadow lg:flex lg:gap-3 lg:lg:rounded-[30px] overflow-hidden"
+      >
+        <!--top section-->
+        <div
+          class="card-bg flex flex-col items-center pt-6 pb-9 rounded-b-[30px] lg:max-w-[370px] lg:rounded-[30px] lg:pt-9 lg:pb-11"
+        >
+          <span
+            class="text-white text-lg opacity-75 mb-7 lg:text-2xl lg:mb-[44px]"
+            >Your Result</span
+          >
+          <!--score section-->
+          <div
+            class="circle-bg flex flex-col items-center size-36 rounded-full mb-4 lg:size-48 lg:mb-10"
+          >
+            <!--score-->
+            <h1
+              id="score"
+              class="text-[55px] font-bold text-white mt-4 lg:mt-10 lg:text-[70px]"
+            >
+              76
+            </h1>
+            <!--score scope-->
+            <span
+              class="block -mt-2 text-white opacity-60 text-base lg:-mt-4 lg:text-lg"
+              >of 100</span
+            >
+          </div>
+          <!--score result-->
+          <strong
+            id="result"
+            class="text-2xl text-white opacity-90 mb-2 lg:text-3xl lg:mb-[15px]"
+            >Great</strong
+          >
+          <!--score description-->
+          <p
+            class="text-white opacity-80 text-center px-14 text-[15px] leading-5 lg:text-lg lg:leading-6"
+          >
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <!--bottom section-->
+        <div class="px-8 py-6 lg:pt-9 lg:w-[340px] lg:px-6 overflow-hidden">
+          <span class="text-lg block font-bold mb-5 lg:text-2xl lg:mb-7"
+            >Summary</span
+          >
+          <!--summary list-->
+          <ul class="flex flex-col gap-4 mb-6 lg:mb-8">
+            <!--list item-->
+            <li class="flex px-3 bg-primary-redOp py-4 rounded-lg">
+              <img
+                class="mr-2"
+                src="./assets/images/icon-reaction.svg"
+                alt="reaction image"
+              />
+              <span
+                class="mr-auto text-primary-lightRed font-semibold lg:text-[17px]"
+                >Reaction</span
+              >
+              <span>
+                <strong class="text-neutral-darkGreyBlue">80</strong> /
+                100</span
+              >
+            </li>
+            <!--list item-->
+            <li class="flex px-3 bg-primary-orangeOp py-4 rounded-lg">
+              <img
+                class="mr-2"
+                src="./assets/images/icon-memory.svg"
+                alt="memory image"
+              />
+              <span
+                class="mr-auto text-primary-orangeYellow font-semibold lg:text-[17px]"
+                >Memory</span
+              >
+              <span> <strong>92</strong> / 100</span>
+            </li>
+            <!--list item-->
+            <li class="flex px-3 bg-primary-greenOp py-4 rounded-lg">
+              <img
+                class="mr-2"
+                src="./assets/images/icon-verbal.svg"
+                alt="verbal image"
+              />
+              <span
+                class="mr-auto text-primary-greenTeal font-semibold lg:text-[17px]"
+                >Verbal</span
+              >
+              <span> <strong>61</strong> / 100</span>
+            </li>
+            <!--list item-->
+            <li class="flex px-3 bg-primary-blueOp py-4 rounded-lg">
+              <img
+                class="mr-2"
+                src="./assets/images/icon-visual.svg"
+                alt="visual image"
+              />
+              <span
+                class="mr-auto text-primary-cobaltBlue font-semibold lg:text-[17px]"
+                >Visual</span
+              >
+              <span> <strong>72</strong> / 100</span>
+            </li>
+          </ul>
+          <button
+            class="bg-slate-800 block py-4 text-white text-lg w-full rounded-full hover:opacity-50"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
